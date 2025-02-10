@@ -1,9 +1,14 @@
 package academy.javapro;
 
 public interface Autonomous {
-    void enableAutopilot();
+    void enableAutopilot(){
+    isAutopilotEnabled()= true;
+ }
 
-    void disableAutopilot();
+    void disableAutopilot(){
+isAutopilotEnabled()= false;
+}
+
 
     boolean isAutopilotEnabled();
 }

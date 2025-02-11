@@ -32,22 +32,20 @@ Vehicle brake(){
 Vehicle isRunning(){
     System.out.println("Running: "+ getisRunning())"
 // testing autonomous features
-Autonomous enableAutoPilot(){
-    if (enableAutoPilot == true){
-    System.out.println("Autopilot is enabled");
-    }else{
-   System.out.println("Autopilot is disabled");
+Autonomous isAutopilotEnabled(){
+    System.out.println("AutoPilot is currently: " + charging());
 }
-}    
+
 // testing eletric functions 
-Electric charging(){
+    isCharging(){
     if (charging == true){
     System.out.println(make + model + "is now charging");
     System.out.println("Charging Status: " );
-        return charging();
+        return charge();
     else{
         System.out.println(make + model + "is not charging");
         System.out.println("Charging Status: " );
-        return charging();
+        return charge();
 
-
+    }
+    }

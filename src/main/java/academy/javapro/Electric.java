@@ -1,7 +1,10 @@
 package academy.javapro;
 
 public class Electric {
-  void charge();
+  void charge(){
+    isCharging()=true;
+  }
   
-  boolean isCharging();
+  boolean isCharging(){
+    return charging();
 }

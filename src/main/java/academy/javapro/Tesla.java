@@ -18,12 +18,12 @@ charging = false;
     // Each method should include appropriate print statements
 //basic vehicle functions 
 Vehicle startEngine(){
-    if( startEngine==true){
     System.out.println( make + model +" started");
-}else{
-         System.out.println( make + model +" stopped");
-    }    
-   Vehicle acclerate(){
+    }
+Vehicle stopEngine(){
+    System.out.partln(make + model +" stopped");
+}
+Vehicle acclerate(){
         System.out.println( make + model + " is accelerating...");
    }
 Vehicle brake(){
@@ -35,16 +35,10 @@ Vehicle isRunning(){
 Autonomous isAutopilotEnabled(){
     System.out.println("AutoPilot is currently: " + charging());
 }
-
+}
 // testing eletric functions 
     isCharging(){
-    if (charging == true){
-    System.out.println(make + model + "is now charging");
     System.out.println("Charging Status: " );
-        return charge();
-    else{
-        System.out.println(make + model + "is not charging");
-        System.out.println("Charging Status: " );
         return charge();
 
     }
